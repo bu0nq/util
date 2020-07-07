@@ -1,0 +1,31 @@
+{
+    "name": "bu0nq/util",
+    "description": "",
+    "homepage": "https://github.com/bu0nq/util",
+    "keywords": [
+        "atom", "php", "util"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BU0NQ", "email": "hello@bu0nq.ru", "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Atom\\Util\\": "src/Util/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
