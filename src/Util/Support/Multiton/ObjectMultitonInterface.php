@@ -1,23 +1,27 @@
 <?php
 
-namespace Atom\Util\Object\Singleton;
+namespace Atom\Util\Support\Multiton;
 
 /**
  * ----------------------------------------------------------------------------------------------------
- * ObjectSingletonInterface
+ * ObjectMultitonInterface
  * ----------------------------------------------------------------------------------------------------
  *
  * @package  Atom\Util
  * @version  1.0.0
  */
-interface ObjectSingletonInterface
+interface ObjectMultitonInterface
 {
     /**
      * Get instance
      *
-     * @return object
+     * @param  int|string  $key
+     *
+     * @return self
      *
      * @since  1.0.0
      */
-    public static function getInstance() : self;
+    public static function getInstance(
+        $key
+    ) : self;
 }

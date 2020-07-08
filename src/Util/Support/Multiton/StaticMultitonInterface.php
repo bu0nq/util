@@ -1,6 +1,6 @@
 <?php
 
-namespace Atom\Util\Object\Multiton;
+namespace Atom\Util\Support\Multiton;
 
 /**
  * ----------------------------------------------------------------------------------------------------

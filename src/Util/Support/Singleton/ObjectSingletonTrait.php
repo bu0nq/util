@@ -1,6 +1,6 @@
 <?php
 
-namespace Atom\Util\Object\Singleton;
+namespace Atom\Util\Support\Singleton;
 
 /**
  * ----------------------------------------------------------------------------------------------------
