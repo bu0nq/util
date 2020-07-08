@@ -4,13 +4,13 @@ namespace Atom\Util\Object\Multiton;
 
 /**
  * ----------------------------------------------------------------------------------------------------
- * MultitonTrait
+ * ObjectMultitonTrait
  * ----------------------------------------------------------------------------------------------------
  *
  * @package  Atom\Util
  * @version  1.0.0
  */
-trait MultitonTrait
+trait ObjectMultitonTrait
 {
     /**
      * Instances

@@ -1,52 +1,66 @@
 <?php
 
-namespace Atom\Util\Object\Singleton;
+namespace Atom\Util\Object\Multiton;
 
 /**
  * ----------------------------------------------------------------------------------------------------
- * SingletonTrait
+ * StaticMultitonTrait
  * ----------------------------------------------------------------------------------------------------
  *
  * @package  Atom\Util
  * @version  1.0.0
  */
-trait SingletonTrait
+trait StaticMultitonTrait
 {
+    /**
+     * Instances
+     *
+     * @var    array
+     * @since  1.0.0
+     */
+    private static $_instances = [];
+
     /**
      * Instance
      *
-     * @var    object
+     * @var    int|string
      * @since  1.0.0
      */
-    private static $_instance = null;
+    private $instance;
 
     /**
      * Get instance
+     *
+     * @param  int|string  $name
      *
      * @return object
      *
      * @since  1.0.0
      */
-    public static function getInstance() : self
-    {
-        if(self::$_instance === null)
+    public static function getInstance(
+        $key
+    ) : self {
+        if(!isset(static::$_instances[$key]))
         {
-            self::$_instance = new self();
+            static::$_instances[$key] = new static($key);
         }
 
-        return self::$_instance;
+        return static::$_instances[$key];
     }
 
     /**
      * Construct
      *
+     * @param  int|string  $key
+     *
      * @return void
      *
      * @since  1.0.0
      */
-    private function __construct()
-    {
-
+    private function __construct(
+        $key
+    ) {
+        $this->instance = $key;
     }
 
     /**

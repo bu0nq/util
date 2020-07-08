@@ -4,20 +4,20 @@ namespace Atom\Util\Object\Multiton;
 
 /**
  * ----------------------------------------------------------------------------------------------------
- * MultitonInterface
+ * ObjectMultitonInterface
  * ----------------------------------------------------------------------------------------------------
  *
  * @package  Atom\Util
  * @version  1.0.0
  */
-interface MultitonInterface
+interface ObjectMultitonInterface
 {
     /**
      * Get instance
      *
      * @param  int|string  $key
      *
-     * @return object
+     * @return self
      *
      * @since  1.0.0
      */

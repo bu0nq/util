@@ -4,13 +4,13 @@ namespace Atom\Util\Object\Singleton;
 
 /**
  * ----------------------------------------------------------------------------------------------------
- * SingletonInterface
+ * ObjectSingletonInterface
  * ----------------------------------------------------------------------------------------------------
  *
  * @package  Atom\Util
  * @version  1.0.0
  */
-interface SingletonInterface
+interface ObjectSingletonInterface
 {
     /**
      * Get instance
