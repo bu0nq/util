@@ -31,7 +31,7 @@ trait StaticMultitonTrait
     /**
      * Get instance
      *
-     * @param  int|string  $name
+     * @param  int|string  $key
      *
      * @return object
      *
